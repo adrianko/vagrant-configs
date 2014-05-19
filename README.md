@@ -5,6 +5,4 @@ Some basic vagrant configs for common web stacks. Uses Puppet as a provisioner a
 
 LAMP (Linux, Apache, MySQL, PHP)
 
-MEAN (MongoDB, Express, AngularJS, Node.js)
-
 NGPP (Nginx, Gunicorn, Python, PostgreSQL)
