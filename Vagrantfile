@@ -6,13 +6,13 @@ Vagrant.configure("2") do |config|
   config.vm.provider :virtualbox do |vb|
     vb.gui = false
     # change name if required
-    vb.name = "lamp"
+    vb.name = "ngpp"
     vb.customize ["modifyvm", :id, "--memory", "512"]
   end
   config.vm.provision :puppet do |puppet|
     puppet.options = ["--user", 'root']
     puppet.manifests_path = ""
     # change to ngpp.pp if required
-    puppet.manifest_file  = "lamp.pp"
+    puppet.manifest_file  = "ngpp.pp"
   end
 end
